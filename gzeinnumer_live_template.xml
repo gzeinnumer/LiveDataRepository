@@ -1,0 +1,120 @@
+<templateSet group="gzeinnumer_live_template">
+  <template name="gzn_tv" value="&lt;TextView&#10;    android:id=&quot;@+id/tv_$id$&quot;&#10;    style=&quot;@style/MyTextContent&quot;&#10;    tools:text=&quot;MyTextContent&quot; /&gt;" description="simple text view" toReformat="true" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_parent_view" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;androidx.core.widget.NestedScrollView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:fillViewport=&quot;true&quot;&gt;&#10;&#10;    &lt;LinearLayout&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;match_parent&quot;&#10;        android:orientation=&quot;vertical&quot;&gt;&#10;&#10;        &lt;com.google.android.material.appbar.AppBarLayout style=&quot;@style/MyAppbarLayout&quot;&gt;&#10;&#10;            &lt;com.google.android.material.appbar.MaterialToolbar style=&quot;@style/MyMaterialToolbar&quot;&gt;&#10;&#10;                &lt;LinearLayout&#10;                    android:layout_width=&quot;match_parent&quot;&#10;                    android:layout_height=&quot;wrap_content&quot;&gt;&#10;&#10;                    &lt;ImageButton&#10;                        android:id=&quot;@+id/btn_back&quot;&#10;                        style=&quot;@style/MyCostumToolbarImage&quot;&#10;                        android:src=&quot;@drawable/mygzn_keyboard_arrow_left&quot;&#10;                        android:tag=&quot;CostumToolbarImage&quot; /&gt;&#10;&#10;                    &lt;TextView&#10;                        android:id=&quot;@+id/tv_toolbar&quot;&#10;                        style=&quot;@style/MyCostumToolbarTitle&quot;&#10;                        android:text=&quot;MyCostumToolbarTitle&quot; /&gt;&#10;&#10;                    &lt;ImageButton&#10;                        android:id=&quot;@+id/btn_popup&quot;&#10;                        style=&quot;@style/MyOptionMenu&quot;&#10;                        android:src=&quot;@drawable/mygzn_more_vert&quot; /&gt;&#10;                &lt;/LinearLayout&gt;&#10;            &lt;/com.google.android.material.appbar.MaterialToolbar&gt;&#10;        &lt;/com.google.android.material.appbar.AppBarLayout&gt;&#10;&#10;        &lt;View style=&quot;@style/MyDivider.Toolbar&quot; /&gt;&#10;&#10;        &lt;LinearLayout style=&quot;@style/MyParentType&quot;&gt;&#10;&#10;        &lt;/LinearLayout&gt;&#10;    &lt;/LinearLayout&gt;&#10;&lt;/androidx.core.widget.NestedScrollView&gt;" description="Simple Xml View" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyTopHeader" value="&lt;TextView&#10;    android:id=&quot;@+id/tv_$id$&quot;&#10;    style=&quot;@style/MyTopHeader&quot;&#10;    android:text=&quot;MyTopHeader&quot; /&gt;" description="MyTopHeader" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyTextHeader" value="&lt;TextView&#10;    android:id=&quot;@+id/tv_$id$&quot;&#10;    style=&quot;@style/MyTextHeader&quot;&#10;    android:text=&quot;MyTextHeader&quot; /&gt;" description="MyTextHeader" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyTextInputLayoutOutlinedBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyTextInputLayoutOutlinedBox&quot;&#10;    android:hint=&quot;OutlinedBox&quot;&gt;&#10;&#10;    &lt;com.google.android.material.textfield.TextInputEditText&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyTextInputEditText&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyTextInputLayoutOutlinedBox" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyTextInputLayoutOutlinedBoxNext" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyTextInputLayoutOutlinedBoxNext&quot;&#10;    android:hint=&quot;OutlinedBoxNext&quot;&gt;&#10;&#10;    &lt;com.google.android.material.textfield.TextInputEditText&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyTextInputEditText&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyTextInputLayoutOutlinedBoxNext" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyTextInputLayoutFilledBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyTextInputLayoutFilledBox&quot;&#10;    android:hint=&quot;FilledBox&quot;&gt;&#10;&#10;    &lt;com.google.android.material.textfield.TextInputEditText&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyTextInputEditText&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyTextInputLayoutFilledBox" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyButtonOutlined" value="&lt;Button&#10;    android:id=&quot;@+id/btn_$id$&quot;&#10;    style=&quot;@style/MyButtonOutlined&quot;&#10;    android:text=&quot;MyButtonOutlined&quot; /&gt;" description="MyButtonOutlined" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyButtonText" value="&lt;Button&#10;    android:id=&quot;@+id/btn_$id$&quot;&#10;    style=&quot;@style/MyButtonText&quot;&#10;    android:text=&quot;MyButtonText&quot; /&gt;" description="MyButtonText" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyButtonIcon" value="&lt;Button&#10;    android:id=&quot;@+id/btn_$id$&quot;&#10;    style=&quot;@style/MyButtonIcon&quot;&#10;    android:text=&quot;MyButtonIcon&quot;&#10;    app:icon=&quot;@drawable/mygzn_add&quot; /&gt;" description="MyButtonIcon" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyAutoCompleteTextViewFilledBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyAutoCompleteTextViewFilledBox&quot;&#10;    android:hint=&quot;FilledBox&quot;&gt;&#10;&#10;    &lt;AutoCompleteTextView&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyAutoCompleteTextView&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyAutoCompleteTextViewFilledBox" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyAutoCompleteTextViewOutlineBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyAutoCompleteTextViewOutlineBox&quot;&#10;    android:hint=&quot;OutlineBox&quot;&gt;&#10;&#10;    &lt;AutoCompleteTextView&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyAutoCompleteTextView&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyAutoCompleteTextViewOutlineBox" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyImageFotoPreview" value="&lt;ImageView&#10;    android:id=&quot;@+id/img_$id$&quot; &#10;    style=&quot;@style/MyImageFotoPreview&quot; /&gt;" description="MyImageFotoPreview" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyDivider" value="&lt;View style=&quot;@style/MyDivider&quot; /&gt;" description="MyDivider" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyDivider_H" value="&lt;View style=&quot;@style/MyDivider.Horizontal&quot;/&gt;" description="Top tp Bottom - MyDivider.Horizontal" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyDivider_V" value="&lt;View style=&quot;@style/MyDivider.Vertical&quot;/&gt;" description="Left To Right MyDivider.Vertical" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyRadioGroup" value="&lt;RadioGroup&#10;    android:id=&quot;@+id/rg_$id$&quot;&#10;    style=&quot;@style/MyRadioGroup&quot;&#10;    android:checkedButton=&quot;@+id/rb_first&quot;&gt;&#10;&#10;    &lt;RadioButton&#10;        android:id=&quot;@+id/rb_first&quot;&#10;        style=&quot;@style/MyRadioButton&quot;&#10;        android:text=&quot;MyRadioButton&quot; /&gt;&#10;&lt;/RadioGroup&gt;" description="MyRadioGroup" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyEditText" value="&lt;EditText&#10;    android:id=&quot;@+id/ed_$id$&quot;&#10;    style=&quot;@style/MyEditText&quot;&#10;    android:hint=&quot;MyEditText&quot; /&gt;" description="MyEditText" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyCheckBox" value="&lt;com.google.android.material.checkbox.MaterialCheckBox&#10;    android:id=&quot;@+id/cb_$id$&quot;&#10;    style=&quot;@style/MyCheckBox&quot;&#10;    android:text=&quot;MyCheckBox&quot; /&gt;" description="MyCheckBox" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_var_live_data" value="private final MutableLiveData&lt;$OBJECT$&gt; _$VAR_NAME$ = new MutableLiveData&lt;&gt;();&#10;&#10;public void set$CAP_VAR_NAME$($OBJECT$ value) {&#10;    _$VAR_NAME$.setValue(value);&#10;}&#10;public LiveData&lt;$OBJECT$&gt; get$CAP_VAR_NAME$() {&#10;    return _$VAR_NAME$;&#10;}" description="Simple MutableLiveData" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAP_VAR_NAME" expression="capitalize(underscoresToCamelCase(VAR_NAME))" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
