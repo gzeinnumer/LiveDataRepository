@@ -134,4 +134,20 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="gzn_conf_item" value="android:layout_marginStart=&quot;@dimen/def_margin&quot;&#10;android:layout_marginTop=&quot;@dimen/def_margin_half&quot;&#10;android:layout_marginEnd=&quot;@dimen/def_margin&quot;&#10;android:layout_marginBottom=&quot;@dimen/def_margin_half&quot;" description="item best Conf" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="gzn_conf_rv" value="android:layout_marginTop=&quot;@dimen/def_margin_half&quot;&#10;android:layout_marginBottom=&quot;@dimen/def_margin_half&quot;    " description="space for LV/RV" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="gzn_binding_ac" value="private $OBJECT$ binding;&#10;&#10;binding = $OBJECT$.inflate(getLayoutInflater());&#10;setContentView(binding.getRoot());" description="binding activity" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
 </templateSet>
