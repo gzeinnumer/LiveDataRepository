@@ -1,0 +1,3 @@
+<templateSet group="user">
+  <template name="gzn_MyButtonContained" value="&lt;Button&#10;    android:id=&quot;@+id/btn_login&quot;&#10;    style=&quot;@style/MyButtonContained&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:text=&quot;Login&quot; /&gt;" description="" toReformat="false" toShortenFQNames="true" />
+</templateSet>

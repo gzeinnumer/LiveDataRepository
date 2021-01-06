@@ -5,7 +5,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="gzn_parent_view" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;androidx.core.widget.NestedScrollView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:fillViewport=&quot;true&quot;&gt;&#10;&#10;    &lt;LinearLayout&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;match_parent&quot;&#10;        android:orientation=&quot;vertical&quot;&gt;&#10;&#10;        &lt;com.google.android.material.appbar.AppBarLayout style=&quot;@style/MyAppbarLayout&quot;&gt;&#10;&#10;            &lt;com.google.android.material.appbar.MaterialToolbar style=&quot;@style/MyMaterialToolbar&quot;&gt;&#10;&#10;                &lt;LinearLayout&#10;                    android:layout_width=&quot;match_parent&quot;&#10;                    android:layout_height=&quot;wrap_content&quot;&gt;&#10;&#10;                    &lt;ImageButton&#10;                        android:id=&quot;@+id/btn_back&quot;&#10;                        style=&quot;@style/MyCostumToolbarImage&quot;&#10;                        android:src=&quot;@drawable/mygzn_keyboard_arrow_left&quot;&#10;                        android:tag=&quot;CostumToolbarImage&quot; /&gt;&#10;&#10;                    &lt;TextView&#10;                        android:id=&quot;@+id/tv_toolbar&quot;&#10;                        style=&quot;@style/MyCostumToolbarTitle&quot;&#10;                        android:text=&quot;MyCostumToolbarTitle&quot; /&gt;&#10;&#10;                    &lt;ImageButton&#10;                        android:id=&quot;@+id/btn_popup&quot;&#10;                        style=&quot;@style/MyOptionMenu&quot;&#10;                        android:src=&quot;@drawable/mygzn_more_vert&quot; /&gt;&#10;                &lt;/LinearLayout&gt;&#10;            &lt;/com.google.android.material.appbar.MaterialToolbar&gt;&#10;        &lt;/com.google.android.material.appbar.AppBarLayout&gt;&#10;&#10;        &lt;View style=&quot;@style/MyDivider.Toolbar&quot; /&gt;&#10;&#10;        &lt;LinearLayout style=&quot;@style/MyParentType&quot;&gt;&#10;&#10;        &lt;/LinearLayout&gt;&#10;    &lt;/LinearLayout&gt;&#10;&lt;/androidx.core.widget.NestedScrollView&gt;" description="Simple Xml View" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_parent_view" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;androidx.core.widget.NestedScrollView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:fillViewport=&quot;true&quot;&gt;&#10;    &#10;    &lt;androidx.constraintlayout.widget.ConstraintLayout&#10;        android:id=&quot;@+id/parent&quot;&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;match_parent&quot;&gt;&#10;&#10;        &lt;LinearLayout&#10;            android:layout_width=&quot;0dp&quot;&#10;            android:layout_height=&quot;0dp&quot;&#10;            android:orientation=&quot;vertical&quot;&#10;            app:layout_constraintBottom_toBottomOf=&quot;parent&quot;&#10;            app:layout_constraintEnd_toEndOf=&quot;parent&quot;&#10;            app:layout_constraintStart_toStartOf=&quot;parent&quot;&#10;            app:layout_constraintTop_toTopOf=&quot;parent&quot;&gt;&#10;&#10;            &lt;com.google.android.material.appbar.AppBarLayout android:background=&quot;@color/white&quot; style=&quot;@style/MyAppbarLayout&quot;&gt;&#10;&#10;                &lt;com.google.android.material.appbar.MaterialToolbar style=&quot;@style/MyMaterialToolbar&quot;&gt;&#10;&#10;                    &lt;LinearLayout&#10;                        android:layout_width=&quot;match_parent&quot;&#10;                        android:layout_height=&quot;wrap_content&quot;&gt;&#10;&#10;                        &lt;ImageButton&#10;                            android:id=&quot;@+id/btn_back&quot;&#10;                            style=&quot;@style/MyCostumToolbarImage&quot;&#10;                            android:src=&quot;@drawable/mygzn_keyboard_arrow_left&quot;&#10;                            android:tag=&quot;CostumToolbarImage&quot; /&gt;&#10;&#10;                        &lt;TextView&#10;                            android:id=&quot;@+id/tv_toolbar&quot;&#10;                            style=&quot;@style/MyCostumToolbarTitle&quot;&#10;                            android:text=&quot;MyCostumToolbarTitle&quot; /&gt;&#10;&#10;                        &lt;ImageButton&#10;                            android:id=&quot;@+id/btn_popup&quot;&#10;                            style=&quot;@style/MyOptionMenu&quot;&#10;                            android:src=&quot;@drawable/mygzn_more_vert&quot; /&gt;&#10;                    &lt;/LinearLayout&gt;&#10;                &lt;/com.google.android.material.appbar.MaterialToolbar&gt;&#10;            &lt;/com.google.android.material.appbar.AppBarLayout&gt;&#10;&#10;            &lt;View style=&quot;@style/MyDivider.Toolbar&quot; /&gt;&#10;&#10;            &lt;LinearLayout style=&quot;@style/MyParentType&quot;&gt;&#10;&#10;            &lt;/LinearLayout&gt;&#10;        &lt;/LinearLayout&gt;&#10;        &#10;    &lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;&#10;&lt;/androidx.core.widget.NestedScrollView&gt;" description="Simple Xml View" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="XML" value="true" />
     </context>
@@ -22,50 +22,58 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="gzn_MyTextInputLayoutOutlinedBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyTextInputLayoutOutlinedBox&quot;&#10;    android:hint=&quot;OutlinedBox&quot;&gt;&#10;&#10;    &lt;com.google.android.material.textfield.TextInputEditText&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyTextInputEditText&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyTextInputLayoutOutlinedBox" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_MyTextInputLayoutOutlinedBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyTextInputLayoutOutlinedBox&quot;&#10;    android:hint=&quot;$hint$&quot;&gt;&#10;&#10;    &lt;com.google.android.material.textfield.TextInputEditText&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyTextInputEditText&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyTextInputLayoutOutlinedBox" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint" expression="capitalize(id)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="gzn_MyTextInputLayoutOutlinedBoxNext" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyTextInputLayoutOutlinedBoxNext&quot;&#10;    android:hint=&quot;OutlinedBoxNext&quot;&gt;&#10;&#10;    &lt;com.google.android.material.textfield.TextInputEditText&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyTextInputEditText&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyTextInputLayoutOutlinedBoxNext" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_MyTextInputLayoutOutlinedBoxNext" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyTextInputLayoutOutlinedBoxNext&quot;&#10;    android:hint=&quot;$hint$&quot;&gt;&#10;&#10;    &lt;com.google.android.material.textfield.TextInputEditText&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyTextInputEditText&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyTextInputLayoutOutlinedBoxNext" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint" expression="capitalize(id)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="gzn_MyTextInputLayoutFilledBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyTextInputLayoutFilledBox&quot;&#10;    android:hint=&quot;FilledBox&quot;&gt;&#10;&#10;    &lt;com.google.android.material.textfield.TextInputEditText&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyTextInputEditText&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyTextInputLayoutFilledBox" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_MyTextInputLayoutFilledBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyTextInputLayoutFilledBox&quot;&#10;    android:hint=&quot;$hint$&quot;&gt;&#10;&#10;    &lt;com.google.android.material.textfield.TextInputEditText&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyTextInputEditText&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyTextInputLayoutFilledBox" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint" expression="capitalize(id)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="gzn_MyButtonOutlined" value="&lt;Button&#10;    android:id=&quot;@+id/btn_$id$&quot;&#10;    style=&quot;@style/MyButtonOutlined&quot;&#10;    android:text=&quot;MyButtonOutlined&quot; /&gt;" description="MyButtonOutlined" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_MyButtonOutlined" value="&lt;Button&#10;    android:id=&quot;@+id/btn_$id$&quot;&#10;    style=&quot;@style/MyButtonOutlined&quot;&#10;    android:text=&quot;$hint$&quot; /&gt;" description="MyButtonOutlined" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint" expression="capitalize(id)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="gzn_MyButtonText" value="&lt;Button&#10;    android:id=&quot;@+id/btn_$id$&quot;&#10;    style=&quot;@style/MyButtonText&quot;&#10;    android:text=&quot;MyButtonText&quot; /&gt;" description="MyButtonText" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_MyButtonText" value="&lt;Button&#10;    android:id=&quot;@+id/btn_$id$&quot;&#10;    style=&quot;@style/MyButtonText&quot;&#10;    android:text=&quot;$hint$&quot; /&gt;" description="MyButtonText" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint" expression="capitalize(id)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="gzn_MyButtonIcon" value="&lt;Button&#10;    android:id=&quot;@+id/btn_$id$&quot;&#10;    style=&quot;@style/MyButtonIcon&quot;&#10;    android:text=&quot;MyButtonIcon&quot;&#10;    app:icon=&quot;@drawable/mygzn_add&quot; /&gt;" description="MyButtonIcon" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_MyButtonIcon" value="&lt;Button&#10;    android:id=&quot;@+id/btn_$id$&quot;&#10;    style=&quot;@style/MyButtonIcon&quot;&#10;    android:text=&quot;$hint$&quot;&#10;    app:icon=&quot;@drawable/mygzn_add&quot; /&gt;" description="MyButtonIcon" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint" expression="capitalize(id)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="gzn_MyAutoCompleteTextViewFilledBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyAutoCompleteTextViewFilledBox&quot;&#10;    android:hint=&quot;FilledBox&quot;&gt;&#10;&#10;    &lt;AutoCompleteTextView&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyAutoCompleteTextView&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyAutoCompleteTextViewFilledBox" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_MyAutoCompleteTextViewFilledBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyAutoCompleteTextViewFilledBox&quot;&#10;    android:hint=&quot;$hint$&quot;&gt;&#10;&#10;    &lt;AutoCompleteTextView&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyAutoCompleteTextView&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyAutoCompleteTextViewFilledBox" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint" expression="capitalize(id)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="gzn_MyAutoCompleteTextViewOutlineBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyAutoCompleteTextViewOutlineBox&quot;&#10;    android:hint=&quot;OutlineBox&quot;&gt;&#10;&#10;    &lt;AutoCompleteTextView&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyAutoCompleteTextView&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyAutoCompleteTextViewOutlineBox" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_MyAutoCompleteTextViewOutlineBox" value="&lt;com.google.android.material.textfield.TextInputLayout&#10;    android:id=&quot;@+id/ed_$id$_p&quot;&#10;    style=&quot;@style/MyAutoCompleteTextViewOutlineBox&quot;&#10;    android:hint=&quot;$hint$&quot;&gt;&#10;&#10;    &lt;AutoCompleteTextView&#10;        android:id=&quot;@+id/ed_$id$&quot;&#10;        style=&quot;@style/MyAutoCompleteTextView&quot; /&gt;&#10;&#10;&lt;/com.google.android.material.textfield.TextInputLayout&gt;" description="MyAutoCompleteTextViewOutlineBox" toReformat="false" toShortenFQNames="true">
     <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint" expression="capitalize(id)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="XML" value="true" />
     </context>
@@ -144,10 +152,75 @@
       <option name="XML_ATTRIBUTE" value="true" />
     </context>
   </template>
-  <template name="gzn_binding_ac" value="private $OBJECT$ binding;&#10;&#10;binding = $OBJECT$.inflate(getLayoutInflater());&#10;setContentView(binding.getRoot());" description="binding activity" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_binding_ac" value="private $OBJECT$ binding;&#10;&#10;binding = $OBJECT$.inflate(getLayoutInflater());&#10;setContentView(binding.getRoot());&#10;&#10;initView();&#10;initTextWatcher();&#10;initObserver();&#10;initOnClick();" description="binding activity" toReformat="false" toShortenFQNames="true">
     <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="gzn_logd" value="GblFunction.myLogD(getClass().getSimpleName(), &quot;$METHOD_NAME$: &quot;+$content$);&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="gzn_binding_fun" value="private void initView() {&#10;&#10;}&#10;&#10;private void initTextWatcher() {&#10;&#10;}&#10;&#10;private void initObserver() {&#10;&#10;}&#10;&#10;private void initOnClick() {&#10;    binding.btnBack.setOnClickListener(view -&gt; {&#10;        onBackPressed();&#10;    });&#10;    debugLocationActivity(binding.$debug$, getClass().getSimpleName());&#10;}&#10;&#10;@Override&#10;public void onBackPressed() {&#10;    super.onBackPressed();&#10;    intentTo($class$.class);&#10;}" description="basic init function" toReformat="false" toShortenFQNames="true">
+    <variable name="debug" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="gzn_init_fr_oncrete" value="private $OBJECT_BIND$ binding;&#10;private $OBJECT_VM$ vm;&#10;&#10;@Override&#10;public View onCreateView(LayoutInflater inflater, ViewGroup container,&#10;        Bundle savedInstanceState) {&#10;    binding = $OBJECT_BIND$.inflate(inflater, container, false);&#10;    vm = new ViewModelProvider(this).get($OBJECT_VM$.class);&#10;    return binding.getRoot();&#10;}&#10;&#10;@Override&#10;public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {&#10;    super.onViewCreated(view, savedInstanceState);&#10;&#10;    initView();&#10;    initTextWatcher();&#10;    initObserver();&#10;    initOnClick();&#10;}&#10;&#10;private void initView() {&#10;&#10;}&#10;&#10;private void initTextWatcher() {&#10;&#10;}&#10;&#10;private void initObserver() {&#10;&#10;}&#10;&#10;public void initOnClick() {&#10;&#10;}" description="simple fr init" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT_VM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJECT_BIND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="gzn_init_ac_oncreate" value="private $OBJECT$ binding;&#10;private $OBJECT_VM$ vm;&#10;&#10;@Override&#10;protected void onCreate(Bundle savedInstanceState) {&#10;    super.onCreate(savedInstanceState);&#10;    binding = $OBJECT$.inflate(getLayoutInflater());&#10;    setContentView(binding.getRoot());&#10;    &#10;    vm = new ViewModelProvider(this).get($OBJECT_VM$.class);&#10;    &#10;    initView();&#10;    initTextWatcher();&#10;    initObserver();&#10;    initOnClick();&#10;}&#10;&#10;private void initView() {&#10;    setPaddingToTopParentView(binding.parent);&#10;}&#10;&#10;private void initTextWatcher() {&#10;&#10;}&#10;&#10;private void initObserver() {&#10;&#10;}&#10;&#10;private void initOnClick() {&#10;    debugLocationActivity(binding.tvToolbar, getClass().getSimpleName());&#10;    binding.btnBack.setOnClickListener(view -&gt; {&#10;        onBackPressed();&#10;    });&#10;}&#10;&#10;@Override&#10;public void onBackPressed() {&#10;    super.onBackPressed();&#10;    intentTo($class$.class);&#10;}" description="simple ini oncreate" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJECT_VM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="gzn_MyButtonContained" value="&lt;Button&#10;    android:id=&quot;@+id/btn_$id$&quot;&#10;    style=&quot;@style/MyButtonContained&quot;&#10;    android:text=&quot;$hint$&quot; /&gt;" description="MyButtonContained" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint" expression="capitalize(id)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_rv" value="&lt;androidx.recyclerview.widget.RecyclerView&#10;    android:id=&quot;@+id/rv&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:layout_marginTop=&quot;@dimen/def_margin_half&quot;&#10;    android:layout_marginBottom=&quot;@dimen/def_margin_half&quot;&#10;    tools:listitem=&quot;@layout/item_$layout$&quot; /&gt;&#10;    &#10;&lt;ImageView&#10;    android:id=&quot;@+id/img_default&quot;&#10;    android:visibility=&quot;gone&quot;&#10;    style=&quot;@style/ImageEmpty&quot;&#10;    android:src=&quot;@drawable/ic_finish_2&quot; /&gt;" description="simple RV" toReformat="false" toShortenFQNames="true">
+    <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_rv_item" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;androidx.cardview.widget.CardView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:layout_marginStart=&quot;@dimen/def_margin&quot;&#10;    android:layout_marginTop=&quot;@dimen/def_margin_half&quot;&#10;    android:layout_marginEnd=&quot;@dimen/def_margin&quot;&#10;    android:layout_marginBottom=&quot;@dimen/def_margin_half&quot;&#10;    app:cardCornerRadius=&quot;@dimen/radius&quot;&gt;&#10;&#10;    &lt;LinearLayout&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:layout_margin=&quot;@dimen/def_margin&quot;&#10;        android:orientation=&quot;vertical&quot;&gt;&#10;        &#10;    &lt;/LinearLayout&gt;&#10;&lt;/androidx.cardview.widget.CardView&gt;&#10;" description="best item config" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_rv_init_adapter" value="private void initAdapter() {&#10;    DummyAdapter adapter = new DummyAdapter(R.layout.$layout$, position -&gt; {&#10;&#10;    });&#10;&#10;    binding.rv.setAdapter(adapter);&#10;    binding.rv.hasFixedSize();&#10;    binding.rv.setLayoutManager(new LinearLayoutManager(getApplicationContext()));&#10;}" description="implement Dummy Adapter" toReformat="false" toShortenFQNames="true">
+    <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="gzn_tv_content" value="&lt;LinearLayout&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:layout_marginTop=&quot;@dimen/space&quot;&#10;    android:orientation=&quot;vertical&quot;&gt;&#10;&#10;    &lt;TextView&#10;        style=&quot;@style/MyTextContent.Grey.Light.Small&quot;&#10;        android:text=&quot;$hint$&quot; /&gt;&#10;&#10;    &lt;TextView&#10;        android:id=&quot;@+id/tv_$id$&quot;&#10;        style=&quot;@style/MyTextContent&quot;&#10;        android:layout_marginTop=&quot;5dp&quot;&#10;        android:text=&quot;$hint$&quot;&#10;        tools:text=&quot;$hint$&quot; /&gt;&#10;&lt;/LinearLayout&gt;" description="sub and detail content" toReformat="false" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="hint" expression="capitalize(id)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gzn_bg_full" value="&lt;include&#10;    layout=&quot;@layout/widget_bg&quot;&#10;    android:layout_width=&quot;0dp&quot;&#10;    android:layout_height=&quot;0dp&quot;&#10;    app:layout_constraintBottom_toBottomOf=&quot;parent&quot;&#10;    app:layout_constraintEnd_toEndOf=&quot;parent&quot;&#10;    app:layout_constraintStart_toStartOf=&quot;parent&quot;&#10;    app:layout_constraintTop_toTopOf=&quot;parent&quot; /&gt;" description="bg with constrain" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
     </context>
   </template>
 </templateSet>
