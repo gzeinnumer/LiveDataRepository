@@ -205,7 +205,7 @@
       <option name="XML" value="true" />
     </context>
   </template>
-  <template name="gzn_rv_init_adapter" value="private void initAdapter() {&#10;    DummyAdapter adapter = new DummyAdapter(R.layout.$layout$, position -&gt; {&#10;&#10;    });&#10;&#10;    binding.rv.setAdapter(adapter);&#10;    binding.rv.hasFixedSize();&#10;    binding.rv.setLayoutManager(new LinearLayoutManager(getApplicationContext()));&#10;}" description="implement Dummy Adapter" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_rv_init_adapter" value="private void initAdapter() {&#10;    DummyAdapter adapter = new DummyAdapter(R.layout.item_$layout$, position -&gt; {&#10;&#10;    });&#10;&#10;    binding.rv.setAdapter(adapter);&#10;    binding.rv.hasFixedSize();&#10;    binding.rv.setLayoutManager(new LinearLayoutManager(getApplicationContext()));&#10;}" description="implement Dummy Adapter" toReformat="false" toShortenFQNames="true">
     <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
@@ -222,5 +222,9 @@
     <context>
       <option name="XML" value="true" />
     </context>
+  </template>
+  <template name="logdz" value="GblFunction.myLogD(TAG, &quot;$METHOD_NAME$: $content$&quot;);&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
   </template>
 </templateSet>
