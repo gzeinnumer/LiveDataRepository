@@ -125,7 +125,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="gzn_click" value="$VIEW$.setOnClickListener(view -&gt; {&#10;&#10;});" description="set on click" toReformat="false" toShortenFQNames="true">
+  <template name="gzn_click" value="binding.$VIEW$.setOnClickListener(view -&gt; {&#10;&#10;});" description="set on click" toReformat="false" toShortenFQNames="true">
     <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
