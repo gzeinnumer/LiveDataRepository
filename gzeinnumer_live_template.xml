@@ -273,4 +273,9 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="gzn_var_list_live_data" value="    private final MutableLiveData&lt;ArrayList&lt;M_Category_Modules&gt;&gt; listModule = new MutableLiveData&lt;&gt;();&#10;    public MutableLiveData&lt;ArrayList&lt;M_Category_Modules&gt;&gt; getListModule() {&#10;        return listModule;&#10;    }&#10;    public void setListDistributor(){&#10;        M_Category_Modules sql = new M_Category_Modules();&#10;        listModule.postValue(sql.getAll());&#10;    }" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
